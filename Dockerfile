@@ -2,7 +2,7 @@ FROM opensuse/leap:latest
 
 ENV LANG=en_US.UTF-8
 
-RUN zypper --non-interactive install --replacefiles which hostname expect net-tools iputils wget vim iproute2 unrar less tar gzip uuidd tcsh libaio insserv-compat sap*
+RUN zypper --non-interactive install --replacefiles which hostname expect net-tools iputils wget vim iproute2 unrar less tar gzip uuidd tcsh libaio insserv-compat libatomic1 sudo sap*
 #RUN zypper refresh && zypper --non-interactive up
 
 # uuidd is needed for all SAP instance
