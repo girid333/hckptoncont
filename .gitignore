@@ -1,18 +1,46 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+# build artefacts
+build
+dist
 
-# Other files and folders
+# user project config
+.user.nabi.json
+
+# Eclipse
+.project
+.classpath
 .settings/
+.launch
+.launch/
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+# Netbeans
+nb-configuration.xml
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# IntelliJ
+.idea/
+*.iml/
+*.iws
+
+# visual studio code
+.vscode
+
+# Mac
+.DS_Store
+
+# Maven
+target/
+
+# Node
+node_modules
+npm-debug.log
+
+# bower
+bower_components
+
+# eslint
+eslint.log
+eslint.tap
+
+# Other
+todo
+download
+sapdownloads
