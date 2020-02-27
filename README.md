@@ -5,10 +5,10 @@ Build the docker image using this repo and create your own images to run in one 
 
 System Requirements
 --------------------
-Memory: 24GB Minimum
-CPU: 4 Minimum
-HDD: 80GB
-Host OS: Any OS which can run docker engine
+Memory: 24GB Minimum                                                                                                                     
+CPU: 4 Minimum                                                                                                                           
+HDD: 80GB                                                                                                                               
+Host OS: Any OS which can run docker engine                                                                                             
 Docker server version 19.0+
 
 Instructions
