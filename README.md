@@ -38,11 +38,11 @@ Instructions
 
 12) Once HANA is up and running check "HDB info"for the HANA process status and wait for 15-20 mins for  XS apps to get started.
 
-13) Then we can Launch SAP HANA cockpit manager by opening https://hckptn01:51029 , use XSA_ADMIN and the password Pass123! for login.
+13) Then we can Launch SAP HANA cockpit manager by opening https://hckptn01:51029 (or the port that gets displayed during build) , use XSA_ADMIN and the password Pass123! for login.
 
 14) We have setup user roles during first login then we can add resource for HANA cockpit administration. (Can even add the same HANA cockpit DB for example)
 
-15) Once required HANA DB resource is added then Launch SAP HANA cockpit by opening https://hckptn01:51027
+15) Once required HANA DB resource is added then Launch SAP HANA cockpit by opening https://hckptn01:51027 (or the port that gets displayed during build)
 
 !!!! Kudos enjoy !!!!!
 
