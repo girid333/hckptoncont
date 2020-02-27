@@ -18,15 +18,15 @@ Instructions
 
 2) Install git (https://www.linode.com/docs/development/version-control/how-to-install-git-on-linux-mac-and-windows/) to your windows/mac desktop or any other Linux machine where docker engine is up and running. (For installing docker on your desktop or in server with community edition pls refer the link https://docs.docker.com/docker-for-windows/install/ & https://docs.docker.com/install/)
 
-3) Next clone this repository to a local directory with "git clone https://github.com/girid333/hckptoncnt.git" (without quotes)
+3) Next clone this repository to a local directory with "git clone https://github.com/girid333/hckptoncont.git" (without quotes)
 
 4) A folder with name "hckptoncont" will be created.
 
 5) perform "cd hckptoncont" now can see Dockerfile and a folder with name sapdownloads.
 
-6) Extract the downloaded HANA cockpit .SAR file into sapdownloads folder (SAPCAR -xvf SAPHANACOCKPIT11_11-70002299.SAR -R .../hckptoncnt/sapdownloads)
+6) Extract the downloaded HANA cockpit .SAR file into sapdownloads folder (SAPCAR -xvf SAPHANACOCKPIT11_11-70002299.SAR -R .../hckptoncont/sapdownloads)
 
-7) From hckptoncnt folder execute "docker build -t hanackpt:2.0 ." (without quotes)
+7) From hckptoncont folder execute "docker build -t hanackpt:2.0 ." (without quotes)
 
 8) Wait untill build is over, then the image with "hanackpt:2.0" HANA cockpit installed is ready for use.
 
