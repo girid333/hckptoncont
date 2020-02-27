@@ -36,7 +36,7 @@ Instructions
 
 11) Now start HANA database with command "HDB start" wait untill HANA gets started. (First time HANA startup may fail wihtout any reason, wait for 15 mins and perform gracefull stop "HDB stop". Once all process stopped, then start HANA DB again, it will start.)
 
-12) Once HANA is up and running check "HDB info"for the HANA process status and wait for 15-20 mons for  XS apps to get started.
+12) Once HANA is up and running check "HDB info"for the HANA process status and wait for 15-20 mins for  XS apps to get started.
 
 13) Then we can Launch SAP HANA cockpit manager by opening https://hckptn01:51029 , use XSA_ADMIN and the password Pass123! for login.
 
