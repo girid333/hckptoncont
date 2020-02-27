@@ -1,4 +1,4 @@
-# hckptoncnt
+# hckptoncont
 HANA Cockpit on Docker Container
 
 Build the docker image using this repo and create your own images to run in one go.
@@ -20,9 +20,9 @@ Instructions
 
 3) Next clone this repository to a local directory with "git clone https://github.com/girid333/hckptoncnt.git" (without quotes)
 
-4) A folder with name "hckptoncnt" will be created.
+4) A folder with name "hckptoncont" will be created.
 
-5) perform "cd hckptoncnt" now can see Dockerfile and a folder with name sapdownloads.
+5) perform "cd hckptoncont" now can see Dockerfile and a folder with name sapdownloads.
 
 6) Extract the downloaded HANA cockpit .SAR file into sapdownloads folder (SAPCAR -xvf SAPHANACOCKPIT11_11-70002299.SAR -R .../hckptoncnt/sapdownloads)
 
