@@ -25,7 +25,7 @@ RUN chmod +x hdblcm.sh hdblcmgui.sh
 # HTTP
 EXPOSE 8000
 # HTTPS
-EXPOSE 44300
+EXPOSE 443
 # ABAP in Eclipse
 EXPOSE 3300
 # SAP GUI
@@ -37,7 +37,11 @@ EXPOSE 3290
 EXPOSE 3390
 EXPOSE 51034
 EXPOSE 51032
+EXPOSE 51027
+EXPOSE 51029
+EXPOSE 39015
+EXPOSE 39032
 
-# Solution: run original hdblcm.sh after the image has been created
-RUN echo "$(hostname -I | awk '{print $1}')     hckptn01" >> /etc/hosts | ./hdblcm.sh --action=install --configfile=/tmp/sapdownloads/h4c_config -b
+# Hana cokcpit installation along with image build
+RUN echo "$(hostname -I | awk '{print $1}')     hckptn01" >> /etc/hosts | ./hdblcm.sh --action=install --configfile=/tmp/sapdownloads/h4c_config -b; su - h4cadm -c "HDB stop"; rm -rf /hana/shared/H4C/xs/app_working/stager; su - h4cadm -c "mkdir /hana/shared/H4C/xs/app_working/stager"
 #RUN ./hdblcm.sh --action=install --configfile=/tmp/sapdownloads/h4c_config -b
