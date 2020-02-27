@@ -45,3 +45,8 @@ Instructions
 15) Once required HANA DB resource is added then Launch SAP HANA cockpit by opening https://hckptn01:51027
 
 !!!! Kudos enjoy !!!!!
+
+Additional Instructions for advanced users
+---------------------------------------------
+
+If at all want to modify hostname, password, SID and instance number need to adjust the modifcations in Docker file and h4c_config file from inside sapdownloads folder by searching existing value and replace it.
