@@ -18,6 +18,14 @@ Instructions
 
 6) Extract the downloaded HANA cockpit .SAR file into sapdownloads folder (SAPCAR -xvf SAPHANACOCKPIT11_11-70002299.SAR -R .../hckptoncnt/sapdownloads)
 
-7) From hckptoncnt folder execute the "docker build -t hanackpt:2.0 ." (without quotes)
+7) From hckptoncnt folder execute "docker build -t hanackpt:2.0 ." (without quotes)
 
-8) Wait untill build is over, then the image with hanacockpit installed is ready for use.
+8) Wait untill build is over, then the image with "hanackpt:2.0" HANA cockpit installed is ready for use.
+
+9) Next we can run a docker container using the image "docker run -p 8000:8000 -p 443:443 -p 3300-3399:3300-3399 -p 3200-3299:3200-3299 -p 51020-51040:51020-51040  -h hckptn01 --name hckptn1 -it hanackpt:2.0 /bin/bash"
+
+10) Once container is up and running with above command it will login to container guest shell. From there switch to user h4cadm with "su - h4cadm"
+
+11) Now start HANA database with command "HDB start" wait untill HANA gets started.
+
+12) Once HANA is up we can use the launchpad with url that gets specifed during build.
